@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Ballmer's Peak</title>
+    <title>Ballmer's Peak: Let's Connect</title>
     <!--<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">-->
 </head>
 
 <body>
     <div id="siteContainer">
-        <h1 class="hidden">Ballmer's Peak</h1>
+        <h1 class="hidden">Let's Connect</h1>
         <header id="mainHeader">
             <div id="logo">
                 <img src="images/logo_white.svg" alt="">
@@ -36,44 +36,60 @@
                 <!--insert social media logos-->
             </nav>
             <!--end mainNav-->
+            <section id="letsConnect">
+                <h2>LET'S CONNECT</h2>
+            </section>
         </header>
         <!--end mainHeader-->
-        <div id="hero">
-            <div id="heroText">
-                <img src="images/logo_white.svg" alt="">
-                <button class="button" type="button">Book a Table</button>
+        <section id="contactInfo">
+            <div id="visitUs">
+                <h2>VISIT US</h2>
+                <ul>
+                    <li>403 Richmond Street</li>
+                    <li>London, Ontario</li>
+                    <li>Canada, N6A 3J4</li>
+                    <li>(519)-123-4567</li>
+                </ul>
             </div>
-        </div>
-        <section id="aboutUs">
-            <h2>ABOUT US</h2>
-            <h3>A causal and one of a kind social pub</h3>
-            <p>Set in the heart of downtown London, Ballmer's Peak strives to cater to the hard working tech, business and creative professionals of the city. We facilitate and host many different meet-ups so like minded people can connect, enjoy a pint
-                and grab a bite. We are a safe, all-inclusive space to socialize, relax and have fun!</p>
-            <img src="images/women_beer.jpg" alt="women drinking beer" />
-        </section>
-        <section id="dailySpecials">
-            <h2>THE DAILY SPECIALS</h2>
-            <ul>
-                <li>MON
-                    <p class="specialsTxt">$6 Pints of Draught Beer - a Ballmer's favourite</p>
-                </li>
-                <li>TUES
-                    <p class="specialsTxt">Meet & Greet - 10% off sharing platters for meetups!</p>
-                </li>
-                <li>WED
-                    <p class="specialsTxt">1/2 Price Bottle of Wine & Live Music at 9PM</p>
-                </li>
-                <li>THURS
-                    <p class="specialsTxt">Let's Lunch - $10 Lunch Menu from 11-3PM</p>
-                </li>
-                <li>SUN
-                    <p class="specialsTxt">1/2 Price apps & Trivia at 8PM</p>
-                </li>
-            </ul>
-            <div id="checkoutEvents">
-                <a href="event.html">CHECKOUT OUR EVENT BOARD </a>
+            <div id="hours">
+                <h2>HOURS</h2>
+                <ul>
+                    <li>11am-11pm</li>
+                    <li>Monday-Thurday</li>
+                    <li>10am-12am</li>
+                    <li>Friday-Sunday</li>
+                </ul>
+            </div>
+            <div id="contactUs">
+                <h2>CONTACT US</h2>
+                <p>We enjoy hearing from you. Leave us any comment, suggestion or inquiry and we will get back to you as soon as possible.</p>
+                <p>Please Note: if you would like to make a reservation please do so through the "Book a table" tab on the navigation menu.</p>
             </div>
         </section>
+
+        <section id="contactForm">
+            <h2 class="hidden">Contact Form</h2>
+            <form action="#" method="post">
+                <div class="contact-info">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name="first-name" id="first-name">
+
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" name="last-name" id="last-name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="emailForm">
+
+                    <label for="comments">Message:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+
+                <button id="submit">Submit</button>
+            </form>
+        </section>
+
+        <!--footer start-->
         <footer id="mainFooter">
             <div id="footerLogo">
                 <img src="images/logo_white.svg" alt="">
