@@ -44,21 +44,23 @@
         <section id="contactInfo">
             <div id="visitUs">
                 <h2>VISIT US</h2>
-                <ul>
-                    <li>403 Richmond Street</li>
-                    <li>London, Ontario</li>
-                    <li>Canada, N6A 3J4</li>
-                    <li>(519)-123-4567</li>
-                </ul>
+                <address>
+                    <span class="addressItem">456 Richmond Street</span>
+                    <span class="addressItem">London, Ontario</span>
+                    <span class="addressItem">Canada, N6A 3J4</span>
+                    <span class="addressItem"> 
+                        <a href="tel:5191234567">(519)-123-4567</a>
+                    </span>
+                </address>
             </div>
             <div id="hours">
                 <h2>HOURS</h2>
-                <ul>
-                    <li>11am-11pm</li>
-                    <li>Monday-Thurday</li>
-                    <li>10am-12am</li>
-                    <li>Friday-Sunday</li>
-                </ul>
+                <dl>
+                    <dt>Monday-Thurday</dt>
+                    <dd>11am-11pm</dd>
+                    <dt>Friday-Sunday</dt>
+                    <dd>10am-12am</dd>
+                </dl>
             </div>
             <div id="contactUs">
                 <h2>CONTACT US</h2>
@@ -110,7 +112,7 @@
                 <form action="#" method="post">
                     <div class="emailInfo">
                         <label for="email">Subscribe to our newsletter</label>
-                        <input type="text" name="email" id="email">
+                        <input placeholder="Email Address" type="text" name="email" id="email">
                         <button class="button" type="button">OK</button>
                     </div>
                 </form>
