@@ -9,39 +9,50 @@
 
 <body>
     <div id="siteContainer">
+        <h1 class="hidden">Ballmer's Peak</h1>
         <header id="mainHeader">
             <div id="logo">
-                <p>Logo</p>
+                <img src="images/logo_white.svg" alt="">
             </div>
             <!--end logo-->
             <nav id="mainNav">
                 <h2 class="hidden">Main Navigation</h2>
                 <ul>
-                    <li class="selected"><a href="#">home</a></li>
-                    <li><a href="menu.html">menu</a></li>
-                    <li><a href="events.html">events</a></li>
-                    <li><a href="about.html">about us</a></li>
+                    <li class="selected"><a href="#">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="connect.html">Let's Connect</a></li>
                 </ul>
-                <!--insert logos-->
+                <div id="headerSocials">
+                    <h3 class="hidden">Header Socials</h>
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="image" alt=""></a>
+                            </li>
+                            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+                        </ul>
+                </div>
+                <!--insert social media logos-->
             </nav>
             <!--end mainNav-->
         </header>
         <!--end mainHeader-->
-        <section id="hero">
+        <div id="hero">
             <div id="heroText">
-                <h1>LOGO</h1>
-                <button class="favorite styled" type="button">Book a Table</button>
+                <img src="images/logo_white.svg" alt="">
+                <button class="button" type="button">Book a Table</button>
             </div>
-        </section>
+        </div>
         <section id="aboutUs">
-            <h1>ABOUT US</h1>
-            <h2>A causal and one of a kind social pub</h2>
+            <h2>ABOUT US</h2>
+            <h3>A causal and one of a kind social pub</h3>
             <p>Set in the heart of downtown London, Ballmer's Peak strives to cater to the hard working tech, business and creative professionals of the city. We facilitate and host many different meet-ups so like minded people can connect, enjoy a pint
                 and grab a bite. We are a safe, all-inclusive space to socialize, relax and have fun!</p>
             <img src="images/women_beer.jpg" alt="women drinking beer" />
         </section>
         <section id="dailySpecials">
-            <h1>THE DAILY SPECIALS</h1>
+            <h2>THE DAILY SPECIALS</h2>
             <ul>
                 <li>MON
                     <p class="specialsTxt">$6 Pints of Draught Beer - a Ballmer's favourite</p>
@@ -65,19 +76,41 @@
         </section>
         <footer id="mainFooter">
             <div id="footerLogo">
-                <img src="images/logo_white.svg" alt="The Ballmer's Peak Logo">
+                <img src="images/logo_white.svg" alt="">
             </div>
             <div id="footerNav">
-                <p>Footer Nav</p>
+                <h2 class="hidden">Footer Navigation</h2>
+                <ul>
+                    <li class="selected"><a href="#">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="connect.html">Let's Connect</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
             </div>
             <!--end FooterNav-->
+
+            <div id="footerSubscribe">
+                <form action="#" method="post">
+                    <div class="emailInfo">
+                        <label for="email">Subscribe to our newsletter</label>
+                        <input type="text" name="email" id="email">
+                        <button class="button" type="button">OK</button>
+                    </div>
+                </form>
+            </div>
+            <div id="footerSocials">
+                <h3 class="hidden">Footer Socials</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/" target="_blank" rel="noopener">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+                </ul>
+            </div>
             <div id="copyRight">
                 <p>Copyright Info</p>
             </div>
-            <!--end Copyright-->
         </footer>
-
-
     </div>
 </body>
 
