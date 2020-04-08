@@ -65,12 +65,26 @@
     text-decoration-color: #F39302;
 }
 
-.socialLink img {
+.socialLink,
+.socialLink a,
+.socialLink a:visited,
+.socialLink a i {
+    border: none !important;
+    text-decoration: none !important;
+}
+
+.socialLink i {
     display: flex;
     width: 35px;
     height: auto;
     justify-content: space-between;
     align-items: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.socialLink i:hover {
+    color: #F39302;
 }
 
 #hero {
@@ -106,4 +120,19 @@
 
 #heroText .button:hover {
     border-color: #F39302;
+}
+
+
+/*About Us Styles */
+
+
+/* Footer Styling */
+
+#mainFooter {
+    background-color: #313131;
+}
+
+#footerLogo img {
+    height: 75px;
+    width: auto;
 }
