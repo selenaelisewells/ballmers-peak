@@ -1,0 +1,109 @@
+/*UTILITIES*/
+
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden {
+    display: none;
+}
+
+
+/* Site Styles */
+
+#siteContainer {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* HEADER STYLES */
+
+#mainHeader {
+    background-color: #313131;
+}
+
+#logo img {
+    height: 75px;
+    width: auto;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#mainNav ul,
+#headerSocials ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+#mainNav ul li {
+    margin: 0 30px;
+}
+
+#headerSocials ul li {
+    margin: 0 26px;
+}
+
+.navLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navLink:hover {
+    text-decoration: underline;
+    text-decoration-color: #F39302;
+}
+
+.selected a {
+    text-decoration: underline;
+    text-decoration-color: #F39302;
+}
+
+.socialLink img {
+    display: flex;
+    width: 35px;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/hero.png);
+    background-size: cover;
+    height: 950px;
+}
+
+#heroText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heroText img {
+    height: 430px;
+    width: auto;
+}
+
+#heroText .button {
+    margin-top: 105px;
+    flex-grow: 0;
+    width: 225px;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+#heroText .button:hover {
+    border-color: #F39302;
+}
