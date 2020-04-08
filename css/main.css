@@ -125,14 +125,169 @@
 
 /*About Us Styles */
 
+#aboutUs h2 {
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 140px;
+}
+
+#aboutUs h3 {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #707070;
+}
+
+#aboutUs p {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #707070;
+}
+
+
+/* Styling for daily specials */
+
+#dailySpecials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dailySpecials ul {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 85px;
+    margin-bottom: 85px;
+}
+
+#dailySpecials ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 30px 45px;
+}
+
+#dailySpecials ul li:nth-child(odd) {
+    border: 2px solid #F39302;
+}
+
+.headerTitle {
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 300px);
+    transform: translateX(-50%);
+    /* left: 10%; */
+}
+
+@media (max-width: 1200px) {
+    .headerTitle {
+        left: 50%;
+    }
+}
+
+.imageHeader {
+    position: relative;
+    background-image: url(../images/drink_banner_beer.jpg);
+    height: 280px;
+    width: 100%;
+    background-size: cover;
+}
+
+.specialsTxt {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #707070;
+    padding-left: 30px;
+}
+
+.specialsDay {
+    flex-basis: 280px;
+    flex-grow: 0;
+    flex-grow: 0;
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#checkoutEvents {
+    display: flex;
+    justify-content: flex-end;
+    width: 1300px;
+    padding: 25px;
+}
+
+#checkoutEvents a {
+    font-size: 30px;
+    color: #707070;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#checkoutEvents a:hover {
+    color: #F39302;
+}
+
 
 /* Footer Styling */
 
 #mainFooter {
     background-color: #313131;
+    color: #fff;
 }
 
 #footerLogo img {
     height: 75px;
     width: auto;
+}
+
+#mainFooter ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+
+#mainFooter .navLink {
+    font-size: 15px;
+}
+
+#mainFooter li {
+    padding-top: 10px;
+}
+
+
+/* styling subscribe */
+
+.emailInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+input {
+    background-color: transparent;
+    border-radius: 4px;
+    border-color: #fff;
+    height: 40px;
+    width: 300px;
+    font-weight: bold;
+}
+
+input::placeholder {
+    padding: 20px;
+}
+
+#footerSubscribe button {
+    background-color: #F39302;
+    height: 40px;
+    width: 80px;
+    border-radius: 4px;
+    border-color: #F39302;
 }
