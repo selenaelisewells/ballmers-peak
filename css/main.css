@@ -405,6 +405,22 @@
     line-height: 3 !important;
 }
 
+.submitContainer {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+#submit {
+    background-color: #F39302;
+    border-color: #F39302;
+    height: 50px;
+    width: 100px;
+    border-radius: 4px;
+}
+
 
 /* contact form styles */
 
