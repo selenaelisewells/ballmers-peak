@@ -11,7 +11,6 @@
 
 <body>
     <div id="siteContainer">
-        <h1 class="hidden">Let's Connect</h1>
         <header id="mainHeader">
             <div class="navBar">
                 <div id="logo">
@@ -33,75 +32,80 @@
                     <h3 class="hidden">Header Socials</h3>
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/" class="socialLink" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/" class="socialLink" target="_blank" rel="noopener"><i
+                                    class="fab fa-facebook"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.twitter.com/" class="socialLink" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.twitter.com/" class="socialLink" target="_blank" rel="noopener"><i
+                                    class="fab fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/" class="socialLink" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/" class="socialLink" target="_blank" rel="noopener"><i
+                                    class="fab fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
 
             </div>
             <!--end mainNav-->
-            <section id="letsConnect">
-                <h2>LET'S CONNECT</h2>
-            </section>
+
         </header>
         <!--end mainHeader-->
-        <section id="contactInfo">
-            <div id="visitUs">
-                <h2>VISIT US</h2>
-                <address>
-                    <span class="addressItem">456 Richmond Street</span>
-                    <span class="addressItem">London, Ontario</span>
-                    <span class="addressItem">Canada, N6A 3J4</span>
-                    <span class="addressItem"> 
-                        <a href="tel:5191234567">(519)-123-4567</a>
-                    </span>
-                </address>
-            </div>
-            <div id="hours">
-                <h2>HOURS</h2>
-                <dl>
-                    <dt>Monday-Thurday</dt>
-                    <dd>11am-11pm</dd>
-                    <dt>Friday-Sunday</dt>
-                    <dd>10am-12am</dd>
-                </dl>
-            </div>
-            <div id="contactUs">
-                <h2>CONTACT US</h2>
-                <p>
-                    We enjoy hearing from you. Leave us any comment, suggestion or inquiry and we will get back to you as soon as possible.
-                </p>
-                <p>
-                    Please Note: if you would like to make a reservation start your message with "Book a table".
-                </p>
+
+        <h2 class="pageTitle">LET'S CONNECT</h2>
+        <section id="letsConnect">
+            <div class="connectContainer">
+
+                <section id="contactInfo">
+                    <div id="visitUs">
+                        <h2 class="contactTitle">VISIT US</h2>
+                        <address>
+                        <span class="addressItem">456 Richmond Street</span>
+                        <span class="addressItem">London, Ontario</span>
+                        <span class="addressItem">Canada, N6A 3J4</span>
+                        <span class="addressItem">
+                            <a href="tel:5191234567">(519)-123-4567</a>
+                        </span>
+                    </address>
+                    </div>
+                    <div id="hours">
+                        <h2 class="contactTitle">HOURS</h2>
+                        <dl class="contactText">
+                            <dt>Monday-Thurday</dt>
+                            <dd>11am-11pm</dd>
+                            <dt>Friday-Sunday</dt>
+                            <dd>10am-12am</dd>
+                        </dl>
+                    </div>
+                </section>
+                <div id="contactUs">
+                    <h2 class="contactTitle">CONTACT US</h2>
+                    <p class="contactText">
+                        We enjoy hearing from you. Leave us any comment, suggestion or inquiry and we will get back to you as soon as possible.
+                    </p><br>
+                    <p class="contactText">
+                        Please Note: If you would like to make a reservation please fill in the subject area with "Book a table".
+                    </p>
+                </div>
             </div>
         </section>
 
         <section id="contactForm">
             <h2 class="hidden">Contact Form</h2>
             <form action="#" method="post">
-                <div class="contact-info">
-                    <label for="first-name">First Name:</label>
-                    <input type="text" name="first-name" id="first-name">
+                <div class="contactInfo">
+
+                    <input type="text" name="name" id="name" placeholder="Full Name">
+                    <input type="email" name="email" id="emailForm" placeholder="Email Address">
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
 
 
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" name="last-name" id="last-name">
-
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="emailForm">
-
-                    <label for="comments">Message:</label>
-                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="messageArea">
+                    <textarea name="comments" id="comments" placeholder="Leave us a message..."></textarea>
                 </div>
 
-                <button id="submit">Submit</button>
+                <!-- <button id="submit">Send</button> -->
             </form>
         </section>
 
@@ -144,8 +148,8 @@
                 </div>
                 <div id="footerAddress">
                     <address>403 Richmond Street <br><br>
-                    London, ON, N6A3J4 <br><br>
-                    <a href="tel:5191234567">(519)-123-4567</a></address>
+                        London, ON, N6A3J4 <br><br>
+                        <a href="tel:5191234567">(519)-123-4567</a></address>
                 </div>
                 <div id="copyRight">
                     <p>© Ballmer's Peak 2020</p>

@@ -357,14 +357,145 @@
 
 .menuItemDescription,
 .menuItemPrice,
-.menuItemFact {
+.menuItemFact,
+.contactText,
+.addressItem a,
+.addressItem {
     font-size: 25px;
     color: #707070;
+    text-decoration: none;
 }
 
-#wine .menuItemFacts {
+.addressItem a:hover {
+    color: #F39302;
+}
+
+.ad #wine .menuItemFacts {
     line-height: 1.75;
     border: 2px solid #F39302;
+}
+
+
+/* contact form styles */
+
+#letsConnect {
+    margin: 40px 00;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    line-height: 1.75;
+}
+
+.connectContainer {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contactInfo,
+#contactUs {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 50%;
+}
+
+#visitUs address {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactTitle {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #707070;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactForm form {
+    display: flex;
+    max-width: 1000px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    background-color: #313131;
+    border-radius: 4px;
+    justify-content: space-around;
+    margin: 40px 0;
+    padding: 40px 0;
+    box-shadow: 12px 12px 2px 1px rgba(243, 147, 2);
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 40%;
+}
+
+.messageArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 40%;
+}
+
+.messageArea textarea {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    padding: 10px;
+    color: #313131;
+}
+
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+
+dt,
+dd {
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+#comments {
+    width: 100%;
+    height: 250px;
+    resize: none;
+}
+
+.contactInfo input {
+    border: none;
+    border-bottom: 3px solid #fff;
+    height: auto;
+    width: 100%;
+    background: transparent;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    color: #fff;
+    -webkit-transition: border-color 300ms;
+    transition: border-color 300ms;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.contactInfo input:focus,
+.contactInfo input:focus-within {
+    border-color: #F39302;
+    outline: none;
 }
 
 
