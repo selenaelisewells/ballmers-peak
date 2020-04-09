@@ -125,22 +125,49 @@
 
 /*About Us Styles */
 
+#aboutUs img {
+    width: 572px;
+    height: auto;
+    border: 2px solid #F39302;
+}
+
+#aboutUs {
+    box-sizing: border-box;
+    padding: 140px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.textWrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    padding-right: 300px;
+}
+
 #aboutUs h2 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-right: 50px;
     font-weight: bold;
     font-size: 60px;
-    margin-top: 140px;
+    border-bottom: 2px solid #F39302;
 }
 
 #aboutUs h3 {
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #707070;
+    margin-bottom: 36px;
 }
 
 #aboutUs p {
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #707070;
+    line-height: 1.75;
 }
 
 
@@ -168,6 +195,7 @@
     justify-content: flex-start;
     width: 100%;
     padding: 30px 45px;
+    box-sizing: border-box;
 }
 
 #dailySpecials ul li:nth-child(odd) {
@@ -219,8 +247,10 @@
 #checkoutEvents {
     display: flex;
     justify-content: flex-end;
-    width: 1300px;
+    max-width: 1300px;
+    width: 100%;
     padding: 25px;
+    margin-bottom: 50px;
 }
 
 #checkoutEvents a {
@@ -240,6 +270,10 @@
 #mainFooter {
     background-color: #313131;
     color: #fff;
+}
+
+#mainFooter .navBar {
+    flex-wrap: wrap;
 }
 
 #footerLogo img {
@@ -262,6 +296,16 @@
     padding-top: 10px;
 }
 
+#footerAddress a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#footerAddress a:hover {
+    text-decoration: underline;
+    text-decoration-color: #F39302;
+}
+
 
 /* styling subscribe */
 
@@ -271,13 +315,21 @@
     flex-wrap: nowrap;
 }
 
+.formGroup {
+    display: flex;
+}
+
 input {
     background-color: transparent;
-    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: none;
     border-color: #fff;
     height: 40px;
     width: 300px;
     font-weight: bold;
+    color: #fff;
+    padding-left: 20px;
 }
 
 input::placeholder {
@@ -286,8 +338,13 @@ input::placeholder {
 
 #footerSubscribe button {
     background-color: #F39302;
-    height: 40px;
+    /* height: 40px; */
     width: 80px;
-    border-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
     border-color: #F39302;
+}
+
+#copyRight {
+    flex-basis: 100%;
 }
