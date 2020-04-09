@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Menu | Ballmer's Peak</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 
@@ -11,31 +13,37 @@
     <div id="siteContainer">
         <h1 class="hidden">Ballmer's Peak - Menu</h1>
         <header id="mainHeader">
-            <div id="logo">
-                <img src="images/logo_white.svg" alt="">
-            </div>
-            <!--end logo-->
-            <nav id="mainNav">
-                <h2 class="hidden">Main Navigation</h2>
-                <ul>
-                    <li class="selected"><a href="#">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="connect.html">Let's Connect</a></li>
-                </ul>
+            <div class="navBar">
+                <div id="logo">
+                    <img src="images./logo_white.svg" alt="">
+                </div>
+                <!--end logo-->
+                <nav id="mainNav">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <ul>
+                        <li class="selected"><a href="#" class="navLink">Home</a></li>
+                        <li><a href="menu.html" class="navLink">Menu</a></li>
+                        <li><a href="events.html" class="navLink">Events</a></li>
+                        <li><a href="connect.html " class="navLink">Let's Connect</a></li>
+                    </ul>
+                </nav>
+                <!--end mainNav-->
                 <div id="headerSocials">
                     <h3 class="hidden">Header Socials</h3>
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="image" alt=""></a>
+                            <a href="https://www.facebook.com/" class="socialLink" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
                         </li>
-                        <li><a href="https://www.twitter.com/" target="_blank" rel="noopener">Twitter</a></li>
-                        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+                        <li>
+                            <a href="https://www.twitter.com/" class="socialLink" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" class="socialLink" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        </li>
                     </ul>
                 </div>
-                <!--insert social media logos-->
-            </nav>
-            <!--end mainNav-->
+
+            </div>
         </header>
         <!--end mainHeader-->
         <section id="foodMenu">
@@ -419,40 +427,49 @@
 
         <!--Start of Footer-->
         <footer id="mainFooter">
-            <div id="footerLogo">
-                <img src="images/logo_white.svg" alt="">
-            </div>
-            <div id="footerNav">
-                <h2 class="hidden">Footer Navigation</h2>
-                <ul>
-                    <li class="selected"><a href="#">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="connect.html">Let's Connect</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                </ul>
-            </div>
-            <!--end FooterNav-->
+            <div class="navBar">
+                <div id="footerLogo">
+                    <img src="images/logo_white.svg" alt="">
+                </div>
+                <div id="footerNav">
+                    <h2 class="hidden">Footer Navigation</h2>
+                    <ul>
+                        <li class="selected"><a href="#" class="navLink">Home</a></li>
+                        <li><a href="menu.html" class="navLink">Menu</a></li>
+                        <li><a href="events.html" class="navLink">Events</a></li>
+                        <li><a href="connect.html" class="navLink">Let's Connect</a></li>
+                        <li><a href="#" class="navLink">Terms & Conditions</a></li>
+                    </ul>
+                </div>
 
-            <div id="footerSubscribe">
-                <form action="#" method="post">
-                    <div class="emailInfo">
-                        <label for="email">Subscribe to our newsletter</label>
-                        <input placeholder="Email Address" type="text" name="email" id="email">
-                        <button class="button" type="button">OK</button>
-                    </div>
-                </form>
-            </div>
-            <div id="footerSocials">
-                <h3 class="hidden">Footer Socials</h3>
-                <ul>
-                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
-                    <li><a href="https://www.twitter.com/" target="_blank" rel="noopener">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
-                </ul>
-            </div>
-            <div id="copyRight">
-                <p>Copyright Info</p>
+                <!--end FooterNav-->
+
+                <div id="footerSubscribe">
+                    <form action="#" method="post">
+                        <div class="emailInfo">
+                            <label for="email">Subscribe to our newsletter</label>
+                            <div class="formGroup"><input placeholder="Email Address" type="text" name="email" id="email">
+                                <button class="button" type="button">OK</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="footerSocials">
+                    <h3 class="hidden">Footer Socials</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" class="navLink">Facebook</a></li>
+                        <li><a href="https://www.twitter.com/" target="_blank" rel="noopener" class="navLink">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" class="navLink">Instagram</a></li>
+                    </ul>
+                </div>
+                <div id="footerAddress">
+                    <address>403 Richmond Street <br><br>
+                    London, ON, N6A3J4 <br><br>
+                    <a href="tel:5191234567">(519)-123-4567</a></address>
+                </div>
+                <div id="copyRight">
+                    <p>© Ballmer's Peak 2020</p>
+                </div>
             </div>
         </footer>
     </div>
