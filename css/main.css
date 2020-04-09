@@ -331,6 +331,30 @@
     background-image: url(../images/drink_banner_blue.jpg);
 }
 
+#connectHeader {
+    position: relative;
+    height: 280px;
+    width: 100%;
+    background-size: cover;
+    background-image: url(../images/connect_banner.jpg);
+}
+
+#eventsHeader {
+    position: relative;
+    height: 280px;
+    width: 100%;
+    background-size: cover;
+    background-image: url(../images/event_banner_cheers.jpg);
+}
+
+.upcomingHeader {
+    position: relative;
+    height: 280px;
+    width: 100%;
+    background-size: cover;
+    background-image: url(../images/event_banner_dice.jpg);
+}
+
 .menuItemsContainer {
     margin: 40px;
     box-sizing: border-box;
@@ -353,10 +377,17 @@
     text-transform: uppercase;
     font-weight: bold;
     color: #707070;
+    line-height: 1.75;
 }
 
 .menuItemDescription,
-.menuItemPrice,
+.menuItemPrice {
+    font-size: 25px;
+    color: #707070;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
 .menuItemFact,
 .contactText,
 .addressItem a,
@@ -370,9 +401,8 @@
     color: #F39302;
 }
 
-.ad #wine .menuItemFacts {
-    line-height: 1.75;
-    border: 2px solid #F39302;
+#wine .menuItemFacts {
+    line-height: 3 !important;
 }
 
 
