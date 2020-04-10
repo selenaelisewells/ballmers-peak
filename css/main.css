@@ -49,6 +49,10 @@
     margin: 0 26px;
 }
 
+.navbar-toggle {
+    display: none;
+}
+
 .navLink {
     color: #fff;
     text-decoration: none;
@@ -116,10 +120,16 @@
     font-weight: bold;
     border-radius: 4px;
     font-size: 20px;
+    background-color: #fff;
+    border: none;
+    transition: all 300ms;
 }
 
 #heroText .button:hover {
-    border-color: #F39302;
+    box-shadow: 12px 12px 2px 1px rgba(243, 147, 2);
+    background-color: #313131;
+    border: none;
+    color: #fff;
 }
 
 
@@ -132,6 +142,7 @@
 }
 
 #aboutUs {
+    overflow: hidden;
     box-sizing: border-box;
     padding: 140px 0;
     display: flex;
@@ -174,6 +185,7 @@
 /* Styling for daily specials */
 
 #dailySpecials {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,10 +223,9 @@
     bottom: -10px;
     left: calc(50% - 500px);
     transform: translateX(-50%);
-    /* left: 10%; */
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
     .headerTitle {
         left: 50%;
     }
@@ -268,7 +279,7 @@
 /* Styling for menu */
 
 .pageTitle {
-    margin-top: 20px;
+    margin-top: 60px;
     font-weight: bold;
     margin-bottom: -15px;
     text-align: center;
@@ -356,7 +367,7 @@
 }
 
 .menuItemsContainer {
-    margin: 40px;
+    margin: 60px 40px 80px 40px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -419,6 +430,13 @@
     height: 50px;
     width: 100px;
     border-radius: 4px;
+    font-weight: bold;
+}
+
+#submit:hover {
+    background-color: #313131;
+    border-color: #fff;
+    color: #fff;
 }
 
 
@@ -623,8 +641,121 @@ input::placeholder {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     border-color: #F39302;
+    font-weight: bold;
+}
+
+#footerSubscribe button:hover {
+    background-color: #313131;
+    border-color: #fff;
+    color: #fff;
 }
 
 #copyRight {
     flex-basis: 100%;
+}
+
+#beer .menuItemFact,
+#mixedDrinks .menuItemFact {
+    line-height: 1.5;
+}
+
+@media screen AND (max-width:1400px) {
+    .siteContainer {
+        width: 100%;
+    }
+    .navBar {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: flex-end;
+    }
+    #logo {
+        margin-right: auto;
+        justify-self: flex-start;
+    }
+    #mainNav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        order: 1;
+        flex-basis: 100%;
+    }
+    #mainNav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #mainNav ul li {
+        flex-direction: column;
+        display: block;
+        padding: 20px;
+    }
+    .navLink {
+        font-size: 40px;
+    }
+    .navbar-toggle {
+        padding: 15px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 24px;
+        display: block;
+    }
+    .active {
+        display: block !important;
+    }
+    .menuItemContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .menuItem {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    #aboutUs {
+        display: flex;
+        flex-direction: column;
+    }
+    .textWrap {
+        padding: 0;
+    }
+    #aboutUs img {
+        margin-top: 50px;
+    }
+    .connectContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 50px;
+        text-align: center;
+    }
+    #hours {
+        margin-top: 50px;
+    }
+    #contactUs {
+        margin-top: 50px;
+        margin-bottom: -50px;
+    }
+    #footerNav,
+    #footerSocials {
+        display: none;
+    }
+    #footerLogo {
+        margin-right: auto;
+    }
+    #footerSubscribe {
+        margin: auto;
+    }
+    #hero img {
+        max-height: 430px;
+        width: 80vw;
+    }
+    #connectHeader {
+        background-position: center right;
+    }
+    #checkoutEvents {
+        justify-content: center;
+    }
 }
